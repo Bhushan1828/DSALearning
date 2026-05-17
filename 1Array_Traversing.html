@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   
+    <title>Document</title>
+    <script>
+      let data = [ 1, 22, 12, 3, 24, 2, 55, 66, 74, 32];
+      function newTraverse(){
+        let element = document.getElementById('new').value;
+        element = parseInt(element);
+        if(element>=0 && element<data.length ){
+          alert(data[element])
+
+        }else{
+          alert("Enter a correct Input ")
+        } 
+
+
+      }
+    </script>
+  </head>
+
+  <body>
+    <input id="new">
+    <button onclick="newTraverse()">Press Here</button>
+    
+  </body>
+</html>
