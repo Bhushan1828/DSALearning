@@ -1,9 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <input placeholder="Enter current position" id="np" />
+    <input placeholder="Enter new Value" id="nv" /><br />
+    <button onclick="getvalues()">Enter Here</button>
+
+    <script>
+      let data = [10, 40, 20, 30, 50];
+
+      function getvalues() {
+        let newd = document.getElementById("nv").value;
+        let position = document.getElementById("np").value;
+        for (let i = data.length - 1; i >= 0; i--) {
+          if (i >= position) {
+            
+            data[i + 1] = data[i];
+
+            if (i == position) {
+              data[i] = newd;
+            }
+          }
+        }
+        console.log(data)
+        alert(data);
+      }
+    </script>
+  </body>
 </html>

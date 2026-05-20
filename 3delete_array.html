@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <input placeholder="Enter value" id="invl">
+  <button onclick="delefun()">Enter Here</button>
+  <script>
+    function delefun(){
+      let data = [ 10, 40, 30, 20, 70];
+      let pos = document.getElementById("invl").value;
+      pos = parseInt(pos)
+      for(let i = pos; i<data.length-1; i++){
+        data[i] = data[i+1];
+
+      }
+      data.length = data.length-1;
+      console.log(data)
+    }
+  </script>
+</body>
+</html>
