@@ -6,19 +6,30 @@
     <title>Document</title>
   </head>
   <body>
-    <input placeholder="Enter input here" id="inpv">
+    <input placeholder="Enter input here" id="inpv" />
     <button onclick="getVal()">Enter Value</button>
     <script>
-      function getVal() {
+      /*function getVal() {
         let data = [10, 30, 20, 40, 60, 60];
         let item = document.getElementById("inpv").value;
-        let initialindex = undefined;
-        for (let i = 0; i < data.length - 1; i++) {
+        let initialindex = [];
+        for (let i = 0; i < data.length; i++) {
           if (data[i] == item) {
-            initialindex = i;
+            initialindex.push(i);
           }
         }
-        console.log(initialindex)
+        console.log(initialindex);
+        //console.warn(data.indexOf(item))
+        //data.splice(2, 1);
+        //console.log(data)
+
+      }*/
+      function getVal() {
+        let data = [10, 40, 30, 20, 50];
+        let v = document.getElementById("inpv").value;
+        for (let i = 0; i < data.length-1; i++) {
+          console.log(data[v]);
+        }
       }
     </script>
   </body>
