@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input placeholder="Enter input here" id="inpv">
+    <button onclick="getVal()">Enter Value</button>
+    <script>
+      function getVal() {
+        let data = [10, 30, 20, 40, 60, 60];
+        let item = document.getElementById("inpv").value;
+        let initialindex = undefined;
+        for (let i = 0; i < data.length - 1; i++) {
+          if (data[i] == item) {
+            initialindex = i;
+          }
+        }
+        console.log(initialindex)
+      }
+    </script>
+  </body>
+</html>

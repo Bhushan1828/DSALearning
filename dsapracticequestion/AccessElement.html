@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <input placeholder="Enter position value here" id="inv" />
+    <button onclick="getallValue()">Enter Here</button>
+    <script>
+      function getallValue() {
+        let data = [10, 20, 30, 40, 50];
+        let position = document.getElementById('inv').value;
+        if (position >= 0 && position <= data.length) {
+          console.log(data[position]);
+        } else {
+          console.log("It is unvalid");
+        }
+      }
+    </script>
+  </body>
+</html>
