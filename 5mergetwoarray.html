@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input />
+    <button>Enter value</button>
+    <script>
+      let data1 = [10, 20, 40, 50];
+      let data2 = [20, 30, 40, 50];
+      let data3 = [];
+      for (let i = 0; i < data1.length; i++) {
+        data3[i] = data1[i];
+      }
+      for (i = 0; i < data2.length-1; i++) {
+        data3[data1.length + i] = data2[i];
+      }
+      console.log(data3);
+    </script>
+  </body>
+</html>
