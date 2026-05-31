@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let n = prompt("Enter a Natural number Here");
+      if (n === null) {
+        document.write("Cancelled");
+      } else {
+        if (isNaN(n)) {
+          document.write("Enter a Correct Value");
+        } else {
+          let submit = 0;
+          for (let i = 1; i <= n; i++) {
+            submit = submit + i;
+          }
+          document.write(submit);
+        }
+      }
+    </script>
+  </body>
+</html>
